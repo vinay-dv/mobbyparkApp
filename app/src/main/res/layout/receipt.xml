@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/bg_round">
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/receipt_start"></ImageView>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:text="Receipt"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="55dp"
+        android:background="#F6F5F5"
+        android:paddingBottom="15dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/g0"
+            android:background="@drawable/receiptopdesign"></ImageView>
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/g0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Ajanta Parking"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:layout_marginLeft="20dp"
+            android:text="Chandni Chowk, A1 Block Road B-12
+        \nDelhi 110040"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"></TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:orientation="horizontal" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/guideline"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="From:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="133dp"
+            android:text="To:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t6"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:text="27 March,\n10:00 am"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t7"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="27dp"
+            android:text="27 March,\n1:00 pm"
+            android:textColor="#777777"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/d2"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/editText2"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/transparent" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Total Time:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t8"
+            android:layout_marginLeft="20dp"
+            android:text="4h, 30min"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/t10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="88dp"
+            android:text="Payment:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t10"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="90dp"
+            android:text="Paid"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/d3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t3"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Vehicle Number:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t11"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="AC45-DL190S"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/t13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="104dp"
+            android:text="Model:"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/t14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t13"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="45dp"
+            android:text="Hyundai i10"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <View
+            android:id="@+id/d4"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/t14"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/transparent" />
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/q1"></ImageView>
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@id/d4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="62dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/circle_button"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:src="@drawable/navigator"
+            android:textColor="#FFFFFF"></ImageButton>
+
+        <TextView
+            android:id="@+id/t15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="71.5dp"
+            android:text="Navigate"
+            android:textColor="#777777"
+            android:textSize="16sp"></TextView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="30dp"
+        android:background="@drawable/receipt_last"></ImageView>
+
+</RelativeLayout>

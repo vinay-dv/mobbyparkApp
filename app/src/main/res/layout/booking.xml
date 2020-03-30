@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/bg_round"
+    >
+
+
+    <ImageView
+        android:id="@+id/topheaderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/booktopdesign"></ImageView>
+
+    <TextView
+        android:id="@+id/parkingNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Ajanta Parking"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parkingNameTextView"
+        android:layout_marginLeft="15dp"
+        android:text="Chandni Chowk, A1 Block Road B-12
+        \nDelhi 110040"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"></TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/addressTextView"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp"
+        android:background="#F6F5F5"
+        >
+
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="#00FFFFFF" />
+
+    <TextView
+        android:id="@+id/chooseVehicleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Vehicle"
+        android:textColor="#777777"
+        android:textSize="16sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/carImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/v1"></ImageView>
+
+    <ImageView
+        android:id="@+id/bikeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/v2"></ImageView>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@id/bikeImageView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/transparent" />
+
+    <TextView
+        android:id="@+id/fromTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        android:layout_marginLeft="20dp"
+        android:text="From:"
+        android:layout_marginTop="15dp"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <TextView
+        android:id="@+id/toTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="133dp"
+        android:layout_marginTop="15dp"
+        android:text="To:"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <EditText
+        android:id="@+id/fromEditTextView"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="time" />
+
+
+    <EditText
+        android:id="@+id/toEditTextView"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="time" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fromEditTextView"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/transparent" />
+
+    <TextView
+        android:id="@+id/totaltimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Total Time:"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <TextView
+        android:id="@+id/totaltimeDisplayTextView"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totaltimeTextView"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/costTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="116dp"
+        android:text="Cost:"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <TextView
+        android:id="@+id/costDisplayTextView"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/costTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text=""
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/totaltimeDisplayTextView"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/transparent" />
+
+    <TextView
+        android:id="@+id/vehicleNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Vehicle Number:"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <EditText
+        android:id="@+id/vehicleNoEditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicleNoTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:textColorHint="#66038497"
+        android:hint="AC45-DL190S"
+        android:textColor="#777777"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+
+    <TextView
+        android:id="@+id/modelNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="103dp"
+        android:text="Model:"
+        android:textColor="#777777"
+        android:textSize="16sp"></TextView>
+
+    <EditText
+        android:id="@+id/modeNoEditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modelNoTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="38dp"
+        android:hint="Hyundai i10"
+        android:textColor="#777777"
+        android:textColorHint="#66038497"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+
+    <Button
+        android:id="@+id/confirmBookingButtonView"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider4"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:elevation="5dp"
+        android:text="Confirm Booking"
+        android:textColor="#FFFFFF"></Button>
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/confirmBookingButtonView"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#F6F5F5" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottomheaderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/receipt_last"></ImageView>
+
+</RelativeLayout>
